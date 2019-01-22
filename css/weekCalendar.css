@@ -1,0 +1,151 @@
+
+html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    img,
+    ul,
+    li,
+    ol,
+    dd,
+    dt,
+    dl,
+    input,
+    textarea,
+    form,
+    fieldset,
+    button,
+    a,
+    p {
+        margin: 0;
+        padding: 0;
+        font-family: arial, helvetica, sans-serif, Noto Sans S Chinese, "微软雅黑";
+    }
+
+    html,
+    body {
+        height: 100%;
+        height: 100%;
+    }
+
+    ol,
+    ul,
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    img {
+        border: none;
+        display: block;
+    }
+
+    .clearfloat {
+        zoom: 1;
+    }
+
+    .clerfloat:after {
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height: 0;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin: 0;
+        padding: 0;
+        border: none
+    }
+
+    .container>ul {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 8px;
+
+    }
+
+    .container>ul li {
+        width: 24px;
+        text-align: center;
+    }
+
+    .calendar-container {
+        margin: 6px 0;
+        overflow: hidden;
+        position: relative;
+        height: 40px;
+    }
+
+
+    .calendar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .calendar div {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .day-container{
+        border-radius: 50%;
+    }
+    .calendar div span {
+       display: block;
+       text-align: center;
+    }
+    .calendar div span:last-child {
+       line-height: 14px;
+       font-size: 10px;
+       overflow: hidden;
+       text-overflow:ellipsis;
+       white-space: nowrap;
+      width: 39px;
+    }
+    .calendar div span:first-child {
+       line-height: 22px;
+      
+    }
+    .calendar .selectColor {
+       
+        background-color: #38c !important;
+    }
+    .calendar .today {
+       
+       background-color: #9a9da2;
+   }
+   .calendar .today span {
+       
+       color: #ffffff;
+   }
+   .container .calendar-foot{
+    margin-top: 12px;
+       width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    height: 100px;
+   }
+    .calendar-foot p{
+        padding: 6px 4%;
+        color: #1b1b1b;
+   }
+   .calendar-foot span{
+    float: right;
+    color: #888;
+}

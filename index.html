@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weekCalendar.css">
+    <script src="js/swiper.js"></script>
+    <script src="./js/weekCalendar.js"></script>
+    <script src="./js/LunarCalendar.min.js"></script>
+</head>
+
+
+<body>
+    
+    <div id = 'test'></div>
+    <script>
+        new WeekCalendar({
+            el: "#test",
+            format:'-',
+            onClick :function(data){
+                console.log(data)
+            },transitionEnd:function(data){
+                console.log(data)
+            },init:function(data){
+                console.log(data)
+            }
+        });
+        console.log(LunarCalendar.solarToLunar(2019,02,05));
+        // var bannerSwiper = new Swiper('#banner', {
+        //     visibilityFullFit: true,
+        //     speed: 600,
+        //     loop: true,
+        //     initialSlide: 1,
+        //     on: {
+        //         slideNextTransitionEnd: (event) => {
+        //             console.log('向后滑动')
+        //         },
+        //         slidePrevTransitionEnd: (event) => {
+        //             console.log('向前滑动')
+        //         }
+        //     }
+        // });
+
+    </script>
+</body>
+
+</html>
